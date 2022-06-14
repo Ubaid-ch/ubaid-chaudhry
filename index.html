@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26bc4b11a1.js" crossorigin="anonymous"></script>
+    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Ubaid-ch</title>
+</head>
+<body x-data="{navbarOpen: false}" class="bg-gray-900 relative">
+    <!-- navigation -->
+    <nav class="bg-gray-900">
+    <div class="sticky top-2 flex flex-wrap-reverse sm:flex-wrap justify-between items-center mr-10 sm:mr-20 ml-10 sm:ml-20 mt-4 text-teal-600">
+                  
+        <button  class="m-auto hidden" @click="navbarOpen= !navbarOpen" :class="{'hidden': !navbarOpen, 'block': navbarOpen}" >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="current" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>  
+    <div  class="hidden w-[100%] sm:w-auto sm:block"  :class="{'hidden': !navbarOpen, 'block': navbarOpen}">
+        <ul class="flex
+                  flex-col
+                   text-center
+                  sm:flex-row sm:space-x-7
+                   divide-y sm:divide-y-0
+                 divide-white">
+            <li class="p-10 sm:p-5 text-xl">
+                <a href="#Home">Home</a>
+            </li>
+            <li class="p-10 sm:p-5 text-xl">
+                <a href="#About">About</a>
+            </li>
+            <li class="p-10 sm:p-5 text-xl">
+                <a href="#Work">Work</a>
+            </li>
+            <li class="p-10 sm:p-5 text-xl">
+                <a href="writing.html" target="_blank">Writing</a>
+            </li>
+        </ul>
+    </div>
+    <button @click="navbarOpen= !navbarOpen">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="h-10 w-10  text-white sm:hidden" fill="current"  viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    </button>
+        <ul class="p-5">
+            <button class="bg-teal-600 rounded-full">
+                <a class="text-white p-6" href="#Contact">Contact</a>
+            </button>
+        </ul>
+    </div>
+    </nav>
+   <!-- home -->
+    <div id="Home" class="container flex justify-around px-20 py-0 sm:p-20">
+        <div class="prose prose-stone sm:p-36">
+            <div class="sm:hidden bg-blend-luminosity">
+                <img class="sm:block shadow-2xl shadow-teal-600 rounded-full" src="../IMG_20220115_222642_279-removebg-preview.png" alt="">
+            </div>
+            <h2 class="text-white">I'M UBAID ULLAH CHAUDHRY</h2>
+            <h1 class="porse prose-teal text-teal-600 text-6xl">Developer</h1>
+            <h1 class="text-white text-7xl">&lt;/&gt;</h2>
+        </div>
+        <div class="bg-blend-luminosity">
+            <img class="sm:block shadow-2xl shadow-teal-600 rounded-full" src="../IMG_20220115_222642_279-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <!-- About -->
+    <div id="About" class="container">
+        <div class="flex">
+        <div class="prose prose-stone text-2xl p-10 sm:p-20">
+            <h1 class="text-teal-600">I'm a web developer!!!</h1>
+            <p class="text-white">I build web sites that are fully responsive and unique.</p>
+            <p class="text-white">Content creater / Entrepreneur</p>
+        </div>
+        <div class="py-20"><img src="../tailwind.jpg" class="shadow-2xl shadow-teal-600" alt=""></div>
+       </div>
+        <div class="grid grid-cols-3 gap-4 sm:flex text-7xl ml-12 sm:ml-0  justify-around p-18">
+           <div class="text-orange-600"><i class="fab fa-html5 fill-current"></i></div>
+           <div class="text-blue-900"><i class="fab fa-css3-alt fill-current"></i></div>
+           <div class="text-yellow-300"><i class="fab fa-js fill-current"></i></div>
+           <div class="text-blue-400"><i class="fab fa-react fill-current"></i></div>
+           <div class="text-red-900"><i class="fab fa-angular fill-current"></i></div>
+           <div class="text-green-700"><i class="fab fa-vuejs fill-current"></i></div>
+        </div>
+    </div>
+    <!-- Work -->
+    <div id="Work" class="container prose prose-stone text-xl sm:text-3xl">
+        <h1 class="text-teal-600 px-20 py-10 sm:p-20">My Work<i class="far fa-smile-wink pl-20"></i></h1>
+        <p class="px-20 pb-10 sm:pb-20 text-3xl text-white">In future,i'll also show my Masterpieces here too for inspiration.</p>
+        <div class="ml-20 mr-12"><q class="underline decoration-pink-500 text-white text-justify p-20"> All you need is the plan, the road map, and the courage!!!</q></div>
+        <br>
+        <div class="py-10 px-20 sm:p-20 flex gap-4 items-center">
+        <a href="https://github.com/Ubaid-ch" target="_blank" class="text-3xl text-center">
+            <i class="fab fa-github text-teal-600"></i></a>
+            
+        <a href="https://www.linkedin.com/in/ubaid-ullah-chaudhry-053880236/" target="_blank" class="text-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:30px ;width:30px;fill:teal;display:inline;"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+           </a>
+            
+        <a href="https://twitter.com/UbaidUllahCha12" target="_blank" class="text-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:30px ;width:30px;fill:teal;display:inline;"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+        </a>
+    </div>
+    </div>
+    <!-- contact -->
+    <div id="Contact" class="container">
+        <div class="prose prose-stone text-xl sm:text-3xl px-20 pt-20 pb-10">
+        <h1 class="text-teal-600">Let's talk!</h1>
+        <p class="text-white text-sm">Get in touch via form below or by emailing <a href="mailto:ubaidullahchaudhry01@gmail.com" class="text-teal-600">ubaidullahchaudhry01@gmail.com</a> </p>
+        </div>
+        <form action="" method="post" class="pl-20">
+            <label for="Name" class="text-white">Name:</label>
+            <br>
+            <input type="text" id="Name" class="form-input rounded-full sm:w-96">
+            <br><br>
+            <label for="Name"  class="text-white">Email:</label>
+            <br>
+            <input type="email" id="Name" class="form-input rounded-full peer sm:w-96">
+            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                Please provide a valid email address.
+              </p>
+            <br><br>
+            <label for="Message"  class="text-white">Message:</label>
+            <br>
+            <textarea name="Message" id="" cols="30" rows="5" class="form-textarea rounded-md sm:w-96"></textarea>
+            <br><br>
+            <button class="rounded-full porse porse-stone text-2xl px-5  bg-teal-600 text-white">Submit</button>
+        </form>
+        <br><br>
+    </div>
+</body>
+</html>
